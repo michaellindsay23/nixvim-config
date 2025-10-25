@@ -1,6 +1,10 @@
 
 { ... }:
 {
+  imports = [
+    ./colorscheme.nix
+  ];
+
   config = {
     # Use <Space> as leader key
     globals.mapleader = " ";
