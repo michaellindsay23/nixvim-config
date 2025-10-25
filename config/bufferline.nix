@@ -1,3 +1,4 @@
+{ ... }:
 {
   plugins = {
     bufferline.enable = true;
