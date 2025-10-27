@@ -19,4 +19,5 @@ nix run .
 # Inspirations
 ```
 https://github.com/nicolas-goudry/nixvim-config
+https://github.com/RoastBeefer00/nix-home/tree/main/nixvim
 ```
