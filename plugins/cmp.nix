@@ -1,8 +1,14 @@
 { pkgs, ... }:
-{
-  # Snippet Engine & its associated nvim-cmp source
-  # https://nix-community.github.io/nixvim/plugins/luasnip/index.html
+{  
+  extraLuaPackages = ps: [
+    # Required by luasnip
+    ps.jsregexp
+  ];
+  
   plugins = {
+
+    # Snippet Engine & its associated nvim-cmp source
+    # https://nix-community.github.io/nixvim/plugins/luasnip/index.html
     luasnip = {
       enable = true;
     };
@@ -16,6 +22,7 @@
     cmp-path = {
       enable = true;
     };
+
   
     cmp = {
       enable = true;
