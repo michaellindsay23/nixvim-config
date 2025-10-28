@@ -4,6 +4,8 @@
     enable = true;
 
     servers = {
+      bashls.enable = true;
+
       clangd.enable = true;
 
       #java-lanuage-server.enable = true;
