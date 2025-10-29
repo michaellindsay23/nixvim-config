@@ -23,6 +23,8 @@
         installCargo = false;
         installRustc = false;
       };
+
+      ts_ls.enable = true;
     };
   };
 }
