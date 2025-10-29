@@ -3,9 +3,10 @@
   imports = [
     ./bufferline.nix
     ./cmp.nix
-    ./telescope.nix
     ./lsp.nix
     ./lualine.nix
+    ./neo-tree.nix
+    ./telescope.nix
     ./treesitter.nix
   ];
 }
