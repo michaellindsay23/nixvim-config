@@ -8,6 +8,8 @@
 
       clangd.enable = true;
 
+      cmake.enable = true;
+
       #java-lanuage-server.enable = true;
 
       jsonls.enable = true;
