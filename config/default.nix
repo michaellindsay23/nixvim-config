@@ -3,6 +3,7 @@
 {
   imports = [
     ./colorscheme.nix
+    ./options.nix
   ];
 
   config = {
