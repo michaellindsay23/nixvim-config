@@ -10,7 +10,7 @@
 
       cmake.enable = true;
 
-      #java-lanuage-server.enable = true;
+      java_language_server.enable = true;
 
       jsonls.enable = true;
 
