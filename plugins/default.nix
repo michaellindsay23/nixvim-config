@@ -8,5 +8,6 @@
     ./neo-tree.nix
     ./telescope.nix
     ./treesitter.nix
+    ./trouble.nix
   ];
 }
