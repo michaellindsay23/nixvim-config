@@ -1,6 +1,7 @@
 { ... }:
 {
   # https://nix-community.github.io/nixvim/plugins/cord/index.html?highlight=cord#cord
+  # https://github.com/vyfor/cord.nvim?tab=readme-ov-file
   plugins.cord = {
     enable = true;
 
