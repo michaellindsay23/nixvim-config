@@ -28,13 +28,13 @@
       enable = true;
   
       settings = {
-        experimental = { ghost_text = true; };
+        #experimental = { ghost_text = true; };
 
         snippet.expand = ''
             function(args)
-  	    require('luasnip').lsp_expand(args.body)
-  	  end
-  	'';
+  	          require('luasnip').lsp_expand(args.body)
+  	        end
+  	    '';
 
         sources = [
           { name = "nvim_lsp"; }
@@ -54,12 +54,10 @@
         # See ``:help ins-completion`
         mapping = {
           # Select next item
-  	"<TAB>" = "cmp.mapping.select_next_item()";
-  	"<down>" = "cmp.mapping.select_next_item()";
+  	      "<TAB>" = "cmp.mapping.select_next_item()";
   
           # Select previous item
-  	"<S-TAB>" = "cmp.mapping.select_prev_item()";
-  	"<up>" = "cmp.mapping.select_prev_item()";
+  	      "<S-TAB>" = "cmp.mapping.select_prev_item()";
   
           # Accept Completion
           "<CR>" = "cmp.mapping.confirm { select = true }";
