@@ -3,6 +3,7 @@
   imports = [
     ./bufferline.nix
     ./cmp.nix
+    ./cord.nix
     ./cursorline.nix
     ./lsp.nix
     ./lualine.nix
