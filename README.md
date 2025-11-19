@@ -21,4 +21,5 @@ nix run .
 https://github.com/nicolas-goudry/nixvim-config
 https://github.com/RoastBeefer00/nix-home/tree/main/nixvim
 https://github.com/MikaelFangel/nixvim-config
+https://github.com/khaneliman/khanelivim/tree/main
 ```
