@@ -12,5 +12,7 @@
     incsearch = true;
     smartcase = true;
     wildmode = "list:longest";
+
+    number = true;
   };
 }
