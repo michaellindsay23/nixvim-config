@@ -1,5 +1,6 @@
 { ... }:
 {
+  # https://nix-community.github.io/nixvim/plugins/cord/index.html?highlight=cord#cord
   plugins.cord = {
     enable = true;
 
