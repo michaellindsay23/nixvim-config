@@ -1,8 +1,20 @@
 { ... }:
 {
-  globals.mapleader = ",";
+  globals.mapleader = ","; 
 
   keymaps = [
+    # Mode binds
+    {
+      mode = "i";
+      key = "jk";
+      action = "<Esc>";
+      options = {
+        silent = true;
+        noremap = true;
+        desc = "Exit insert mode";
+      };
+    }
+
     # Global
     # Default mode is "" which means normal-visual-op
     {
