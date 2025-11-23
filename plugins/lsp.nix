@@ -10,6 +10,8 @@
 
       cmake.enable = true;
 
+      glslls.enable = true;
+
       java_language_server.enable = true;
       jdtls.enable = true;
 
