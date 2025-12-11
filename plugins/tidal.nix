@@ -1,11 +1,16 @@
 { inputs, pkgs, ... }:
 {
-  extraPlugins = with pkgs.vimPlugins; [
-    vim-tidal 
-  ];
-
   extraConfigLua = ''
-    vim.g.tidal_target = "terminal"
-  '';
+    require("grddavies/tidal.nvim")'';
+#	  opts = {
+#	    -- Your configuration here
+#	    -- See configuration section for defaults
+#	  },
+#	  -- Recommended: Install TreeSitter parsers for Haskell and SuperCollider
+#	  dependencies = {
+#		  "nvim-treesitter/nvim-treesitter",
+#		  opts = { ensure_installed = { "haskell", "supercollider" } },
+#	  },
+#  '';
 }
 
