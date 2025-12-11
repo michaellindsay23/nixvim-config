@@ -5,10 +5,17 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
     nixvim.url = "github:nix-community/nixvim";
     flake-parts.url = "github:hercules-ci/flake-parts";
+
+    tidalcycles-nix.url = "github:mitchmindtree/tidalcycles.nix";
   };
 
-  outputs =
-    { nixpkgs, nixvim, flake-parts, ... }@inputs:
+  outputs = { 
+    nixpkgs, 
+    nixvim, 
+    flake-parts, 
+    tidalcycles-nix,
+    ... 
+  }@inputs:
     flake-parts.lib.mkFlake { inherit inputs; } {
       systems = [
         "x86_64-linux"
@@ -20,7 +27,13 @@
       perSystem =
         { system, config, options, ... }:
         let
-	  pkgs = import nixpkgs { inherit system; };
+	        pkgs = import nixpkgs { 
+            overlays = [
+              inputs.tidalcycles-nix.overlays.default
+            ];
+
+            inherit system; 
+          };
 
           nixvimLib = nixvim.lib.${system};
           nixvim' = nixvim.legacyPackages.${system};
