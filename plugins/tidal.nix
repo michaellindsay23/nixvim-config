@@ -13,11 +13,11 @@ in
   ];
 
   extraConfigVim = ''
-    g:tidal_target = "terminal",
-    g:tidal_sc_enable = 1,
+    g:tidal_target = "terminal"
+    g:tidal_sc_enable = 1
     
-    --automatically start the GHCi session when opening a .tidal file
-    autocmd BufReadPre *.tidal silent! :call TidalStart(0),
+    " automatically start the GHCi session when opening a .tidal file
+    autocmd BufReadPre *.tidal silent! :call TidalStart(0)
   '';
 }
 
