@@ -12,12 +12,14 @@ in
     supercollider
   ];
 
-  extraConfigVim = ''
-    g:tidal_target = "terminal"
-    g:tidal_sc_enable = 1
+  extraConfigLua = ''
+  vim.cmd([[
+    let g:tidal_target = "terminal"
+    let g:tidal_sc_enable = 1
     
     " automatically start the GHCi session when opening a .tidal file
     autocmd BufReadPre *.tidal silent! :call TidalStart(0)
+  ]])
   '';
 }
 
