@@ -5,12 +5,15 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
     nixvim.url = "github:nix-community/nixvim";
     flake-parts.url = "github:hercules-ci/flake-parts";
+
+    tidalcycles.url = "github:mitchmindtree/tidalcycles.nix";
   };
 
   outputs = { 
     nixpkgs, 
     nixvim, 
     flake-parts, 
+    tidalcycles,
     ... 
   }@inputs:
     flake-parts.lib.mkFlake { inherit inputs; } {
@@ -25,10 +28,6 @@
         { system, config, options, ... }:
         let
 	        pkgs = import nixpkgs { 
-            #overlays = [
-            #
-            #];
-
             inherit system; 
           };
 
@@ -39,7 +38,7 @@
             module = ./.; # import the module directly
             # You can use `extraSpecialArgs` to pass additional arguments to your module files
             extraSpecialArgs = {
-              # inherit (inputs) foo;
+              inherit inputs;
             };
           };
           nvim = nixvim'.makeNixvimWithModule nixvimModule;

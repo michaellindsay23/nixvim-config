@@ -30,6 +30,11 @@
       };
 
       ts_ls.enable = true;
+
+      hls = {
+        enable = true;
+        installGhc = true;
+      };
     };
   };
 }

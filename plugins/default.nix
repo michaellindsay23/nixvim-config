@@ -10,7 +10,7 @@
     ./neo-tree.nix
     ./precognition.nix
     ./telescope.nix
-    #./tidal.nix
+    ./tidal.nix
     ./treesitter.nix
     ./trouble.nix
     ./which-key.nix
