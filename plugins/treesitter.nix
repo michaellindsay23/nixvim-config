@@ -11,6 +11,7 @@
       nix
       rust
       haskell
+      supercollider
     ];
   };
 }
