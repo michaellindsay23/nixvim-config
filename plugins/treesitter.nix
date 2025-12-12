@@ -10,6 +10,7 @@
       lua
       nix
       rust
+      haskell
     ];
   };
 }
