@@ -27,7 +27,24 @@
         { system, config, options, ... }:
         let
 	        pkgs = import nixpkgs { 
-            inherit system; 
+            inherit system;
+
+            overlays = [(final: prev: {
+              vimPlugins = prev.vimPlugins // {
+                tidal-nvim = pkgs.vimUtils.buildVimPlugin {
+                  name = "tidal-nvim";
+                  version = "unstable";
+                  src = pkgs.fetchFromGitHub {
+                    owner = "grddavies";
+                    repo = "tidal.nvim";
+                    rev = "fa4673e181e18fd1719ae17a1d4f4ecce2de37aa";
+                    hash = "sha256-sbxBIybZdQptiD3zDJtitOcuy5bZSwgf9EPpMlik8Ds=";
+                  };
+                };
+
+                meta.homepage = "https://github.com/grddavies/tidal.nvim";
+              };
+            })];
           };
 
           nixvimLib = nixvim.lib.${system};

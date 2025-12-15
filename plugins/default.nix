@@ -5,7 +5,7 @@
     ./cmp.nix
     ./cord.nix
     ./cursorline.nix
-    ./lazy.nix
+    #./lazy.nix
     ./lsp.nix
     ./lualine.nix
     ./neo-tree.nix

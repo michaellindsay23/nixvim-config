@@ -1,16 +1,15 @@
-{ ... }:
+{ pkgs, lib, config, ... }:
+let
+  tidal-nvim-module = lib.nixvim.plugins.mkNeovimPlugin {
+    name = "tidal-nvim";
+    maintainers = [ "Gethin Davies" ];
+    package = "tidal-nvim";
+  };
+in
 {
-  extraConfigLua = ''
-    require("grddavies/tidal.nvim").setup({
-	    opts = {
-		    -- Your configuration here
-		    -- See configuration section for defaults
-	    },
-	    -- Recommended: Install TreeSitter parsers for Haskell and SuperCollider
-	    dependencies = {
-		    "nvim-treesitter/nvim-treesitter",
-		    opts = { ensure_installed = { "haskell", "supercollider" } },
-	    },
-    })
-  '';
+  imports = [ tidal-nvim-module ];
+  
+  plugins.tidal-nvim = {
+    enable = true;
+  };
 }
