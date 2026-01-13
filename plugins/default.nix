@@ -11,7 +11,7 @@
     ./neo-tree.nix
     ./precognition.nix
     ./telescope.nix
-    ./tidalnvim.nix
+    #./tidalnvim.nix
     ./treesitter.nix
     ./trouble.nix
     ./which-key.nix
