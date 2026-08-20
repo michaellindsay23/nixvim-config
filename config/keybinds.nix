@@ -14,6 +14,17 @@
         desc = "Exit insert mode";
       };
     }
+    {
+      mode = "i";
+      key = "Esc";
+      action = "<C-\><C-n>";
+      options = {
+        silent = true;
+        noremap = true;
+        desc = "Exit insert mode in term";
+      };
+    }
+
 
     # Global
     # Default mode is "" which means normal-visual-op
