@@ -14,6 +14,7 @@
     #./tidalnvim.nix
     ./treesitter.nix
     ./trouble.nix
+    ./ts-autotag.nix
     ./which-key.nix
   ];
 }
