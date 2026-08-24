@@ -7,11 +7,15 @@
 
     grammarPackages = with pkgs.vimPlugins.nvim-treesitter.builtGrammars; [
       c
+      cpp
       lua
       nix
       rust
       haskell
-      supercollider
+      html
+      css
+      javascript
+      python
     ];
   };
 }
