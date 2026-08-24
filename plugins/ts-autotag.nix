@@ -1,9 +1,6 @@
 { ... }:
 {
-  plugins = {
-    ts-autotag = {
-      enable = true;
-      autoLoad = true;
-    };
+  plugins.ts-autotag = {
+    enable = true;
   };
 }

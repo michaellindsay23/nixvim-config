@@ -1,6 +1,7 @@
 { ... }:
 {
   imports = [
+    ./autopairs.nix
     ./bufferline.nix
     ./cmp.nix
     ./cord.nix
