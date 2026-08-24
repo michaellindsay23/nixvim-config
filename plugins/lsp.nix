@@ -35,6 +35,10 @@
         enable = true;
         installGhc = true;
       };
+
+      html.enable = true;
+
+      cssls.enable = true;
     };
   };
 }
