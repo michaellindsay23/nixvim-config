@@ -61,13 +61,25 @@
       mode = "v";
       key = "<Tab>";
       action = ">gv";
-      options.desc = "Indent Line";
+      options.desc = "Indent line in visual";
+    }
+    {
+      mode = "n";
+      key = "<Tab>";
+      action = ">>";
+      options.desc = "indent line in normal";
     }
     {
       mode = "v";
       key = "<S-Tab>";
       action = "<gv";
-      options.desc = "Unindent Line";
+      options.desc = "Unindent line in visual";
+    }
+    {
+      mode = "n";
+      key = "<S-Tab>";
+      action = "<<";
+      options.desc = "Unindent line in normal";
     }
 
 
