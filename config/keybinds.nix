@@ -48,7 +48,7 @@
       key = "<M-S-Tab>";
       action = "<CMD>bp<CR>";
     }
-
+  
 
     # File
     {
@@ -58,10 +58,18 @@
       options.desc = "files";
     }
     {
-        mode = "v";
-        key = "<Tab>";
-        action = ">gv";
-        options.desc = "Indent Line";
+      mode = "v";
+      key = "<Tab>";
+      action = ">gv";
+      options.desc = "Indent Line";
     }
+    {
+      mode = "v";
+      key = "<S-Tab>";
+      action = "<gv";
+      options.desc = "Unindent Line";
+    }
+
+
   ];
 }
