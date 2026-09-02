@@ -81,7 +81,11 @@
       action = "<<";
       options.desc = "Unindent line in normal";
     }
-
-
+    {
+      mode = "i";
+      key = "<C-BS>";
+      action = "<C-o>";
+      options.desc = "Backspace full word in insert";
+    }
   ];
 }
