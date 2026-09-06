@@ -15,9 +15,9 @@
       };
     }
     {
-      mode = "i";
+      mode = "t";
       key = "Esc";
-      action = "<C-\><C-n>";
+      action = "<C-$$><C-n>";
       options = {
         silent = true;
         noremap = true;
