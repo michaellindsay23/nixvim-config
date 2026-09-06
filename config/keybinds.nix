@@ -16,7 +16,7 @@
     }
     {
       mode = "t";
-      key = "Esc";
+      key = "<Esc>";
       action = "<C-\\><C-n>";
       options = {
         silent = true;
