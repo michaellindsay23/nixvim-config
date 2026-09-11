@@ -3,89 +3,102 @@
   globals.mapleader = ","; 
 
   keymaps = [
-    # Mode binds
     {
+      options.desc = "Exit insert mode";
       mode = "i";
       key = "jk";
       action = "<Esc>";
       options = {
         silent = true;
         noremap = true;
-        desc = "Exit insert mode";
       };
     }
     {
+      options.desc = "Exit insert mode in term";
       mode = "t";
       key = "<Esc>";
       action = "<C-\\><C-n>";
       options = {
         silent = true;
         noremap = true;
-        desc = "Exit insert mode in term";
       };
     }
-
-
-    # Global
-    # Default mode is "" which means normal-visual-op
     {
+      options.desc = "Toggle Neotree";
       key = "<C-n>";
       action = "<CMD>Neotree<CR>";
-      options.desc = "Toggle Neotree";
     }
     {
+      options.desc = "close buffer";
       mode = "n";
       key = "<leader>c";
-      action = "<CMD>bd!<CR>";
-      options.desc = "close buffer";
+      action = "bd!";
     }
-    # Swap tabs
     {
+      options.desc = "Swap tab forward";
       key = "<M-Tab>";
-      action = "<CMD>bn<CR>";
+      action = "bn";
     }
     {
+      options.desc = "Swap tab backward";
       key = "<M-S-Tab>";
-      action = "<CMD>bp<CR>";
+      action = "bp";
     }
-  
-
-    # File
     {
+      options.desc = "Change selected window right";
+      key = "<M-Right>";
+      action = "<C-w>l";
+    }
+    {
+      options.desc = "Change selected window left";
+      key = "<M-Left>";
+      action = "<C-w>h";
+    }
+    {
+      options.desc = "Change selected window down";
+      key = "<M-Down>";
+      action = "<C-w>j";
+    }
+    {
+      options.desc = "Change selected window up";
+      key = "<M-Up>";
+      action = "<C-w>k";
+    }
+    {
+      options.desc = "Telescope find files";
       mode = "n";
       key = "<leader>ff";
       action = "<CMD>Telescope find_files<CR>";
-      options.desc = "files";
     }
     {
-      mode = "v";
-      key = "<Tab>";
-      action = ">gv";
       options.desc = "Indent line in visual";
+      mode = "v";
+      key = "<Tab>";
+      action = ">gvll";
     }
     {
+      options.desc = "indent line in normal";
       mode = "n";
       key = "<Tab>";
-      action = ">>";
-      options.desc = "indent line in normal";
+      action = ">>ll";
     }
     {
+      options.desc = "Unindent line in visual";
       mode = "v";
       key = "<S-Tab>";
-      action = "<gv";
-      options.desc = "Unindent line in visual";
+      action = "<gvhh";
     }
     {
+      options.desc = "Unindent line in normal";
       mode = "n";
       key = "<S-Tab>";
-      action = "<<";
-      options.desc = "Unindent line in normal";
+      action = "<<hh";
     }
     {
+      options.desc = "Backspace full word in insert";
       mode = "i";
       key = "<C-BS>";
-      action = "<C-o>";
-      options.desc = "Backspace full word in insert";
+      action = "db";
     }
   ];
 }
