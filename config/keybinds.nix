@@ -1,6 +1,6 @@
 { ... }:
 {
-  globals.mapleader = ","; 
+  globals.mapleader = " "; 
 
   keymaps = [
     {
@@ -29,10 +29,22 @@
       action = "<CMD>Neotree<CR>";
     }
     {
-      options.desc = "close buffer";
+      options.desc = "Quit buffer";
       mode = "n";
-      key = "<leader>c";
-      action = "bd!";
+      key = "<leader>q";
+      action = ":q<Enter>";
+    }
+    {
+      options.desc = "Write buffer";
+      mode = "n";
+      key = "<leader>ww";
+      action = ":w<Enter>";
+    }
+    {
+      options.desc = "Write quit buffer";
+      mode = "n";
+      key = "<leader>wq";
+      action = ":wq<Enter>";
     }
     {
       options.desc = "Swap tab forward";
