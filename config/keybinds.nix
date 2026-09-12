@@ -37,12 +37,12 @@
     {
       options.desc = "Swap tab forward";
       key = "<M-Tab>";
-      action = "bn";
+      action = "gt";
     }
     {
       options.desc = "Swap tab backward";
       key = "<M-S-Tab>";
-      action = "bp";
+      action = "gT";
     }
     {
       options.desc = "Change selected window right";
