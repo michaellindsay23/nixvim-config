@@ -5,8 +5,9 @@
     
     settings = {
       auto_clean_after_session_restore = true;
-
       close_if_last_window = true;
+      document_symbols = true;
+      source_selector.winbar = true;
     };
   };
 }

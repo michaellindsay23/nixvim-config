@@ -16,7 +16,7 @@
     {
       options.desc = "Exit insert mode in term";
       mode = "t";
-      key = "<Esc>";
+        key = "<Esc>";
       action = "<C-\\><C-n>";
       options = {
         silent = true;
@@ -32,29 +32,31 @@
       options.desc = "Quit buffer";
       mode = "n";
       key = "<leader>q";
-      action = ":q<Enter>";
+      action = "<CMD>q<CR>";
     }
     {
       options.desc = "Write buffer";
       mode = "n";
       key = "<leader>ww";
-      action = ":w<Enter>";
+      action = "<CMD>w<CR>";
     }
     {
       options.desc = "Write quit buffer";
       mode = "n";
       key = "<leader>wq";
-      action = ":wq<Enter>";
+      action = "<CMD>wq<CR>";
     }
     {
       options.desc = "Swap tab forward";
+      mode = "n";
       key = "<M-Tab>";
-      action = "gt";
+      action = "<CMD>bnext<CR>";
     }
     {
       options.desc = "Swap tab backward";
+      mode = "n";
       key = "<M-S-Tab>";
-      action = "gT";
+      action = "<CMD>bprevious<CR>";
     }
     {
       options.desc = "Change selected window right";
