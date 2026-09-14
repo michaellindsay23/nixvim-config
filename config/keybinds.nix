@@ -29,6 +29,12 @@
       action = "<CMD>Neotree<CR>";
     }
     {
+      options.desc = "Open terminal";
+      mode = "n";
+      key = "<Leader>t";
+      action = "<CMD>term<CR>";
+    }
+    {
       options.desc = "Quit buffer";
       mode = "n";
       key = "<leader>q";
