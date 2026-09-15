@@ -118,7 +118,7 @@
       options.desc = "Backspace full word in insert";
       mode = "i";
       key = "<C-BS>";
-      action = "db";
+      action = "<Space><Esc>dba<Backspace>";
     }
   ];
 }
