@@ -26,6 +26,7 @@
       rust_analyzer = {
         enable = true;
         installCargo = false;
+        installRustc = true;
       };
 
       ts_ls.enable = true;
