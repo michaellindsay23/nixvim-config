@@ -16,6 +16,7 @@
     ./treesitter.nix
     ./trouble.nix
     ./ts-autotag.nix
+    ./typst.nix
     ./which-key.nix
   ];
 }
