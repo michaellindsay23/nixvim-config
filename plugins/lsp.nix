@@ -31,8 +31,6 @@
 
       ts_ls.enable = true;
 
-      typst-preview.enable = true;
-
       hls = {
         enable = true;
         installGhc = true;
