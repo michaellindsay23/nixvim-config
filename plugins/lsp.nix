@@ -31,6 +31,8 @@
 
       ts_ls.enable = true;
 
+      typst-analyzer.enable = true;
+
       hls = {
         enable = true;
         installGhc = true;
