@@ -31,7 +31,7 @@
 
       ts_ls.enable = true;
 
-      typst-analyzer.enable = true;
+      typst-preview.enable = true;
 
       hls = {
         enable = true;
