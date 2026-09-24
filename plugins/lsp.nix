@@ -31,6 +31,8 @@
 
       ts_ls.enable = true;
 
+      tinymist.enable = true;
+
       hls = {
         enable = true;
         installGhc = true;
