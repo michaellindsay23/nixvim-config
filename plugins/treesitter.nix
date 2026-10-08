@@ -16,6 +16,8 @@
       css
       javascript
       python
+      gdscript
+      sql
     ];
   };
 }
