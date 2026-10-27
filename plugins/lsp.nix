@@ -19,6 +19,8 @@
 
       lua_ls.enable = true;
 
+      ltex.enable = true;
+
       nixd.enable = true;
     
       pylsp.enable = true;

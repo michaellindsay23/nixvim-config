@@ -23,6 +23,8 @@
     # https://nix-community.github.io/nixvim/plugins/cmp_luasnip.html
     cmp_luasnip.enable = true;
 
+    # https://nix-community.github.io/nixvim/plugins/cmp-latex-symbols/index.html
+    cmp-latex-symbols.enable = true;
   
     cmp = {
       enable = true;
@@ -45,6 +47,7 @@
           }
           { name = "nvim_lua"; }
           { name = "path"; }
+          { name = "latex_symbols"; }
         ];
   
         completion = {
